@@ -97,7 +97,7 @@ resource "azurerm_nginx_deployment" "main" {
   sku                       = var.sku
   capacity                  = var.capacity
   automatic_upgrade_channel = "stable"
-  diagnose_support_enabled  = true
+  diagnose_support_enabled  = false
 
   identity {
     type         = "SystemAssigned, UserAssigned"
