@@ -30,7 +30,8 @@ variable "grafana_admin_object_ids" {
 variable "sku" {
   type        = string
   description = "NGINXaaS SKU tier"
-  default     = "standardv2_Monthly_gmz7xq9ge3py"
+  # default     = "standardv2_Monthly_gmz7xq9ge3py" # Deprecated
+  default = "standardv3_Monthly_n7ja87drquhy"
 }
 
 variable "capacity" {

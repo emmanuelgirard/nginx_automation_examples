@@ -136,7 +136,7 @@
             ],
             "customNamespace": "nginxaas statistics",
             "dimensionFilters": [],
-            "metricName极": "ncu.requested",
+            "metricName": "ncu.requested",
             "metricNamespace": "nginx.nginxplus/nginxdeployments",
             "region": "$region",
             "resources": [
@@ -1050,7 +1050,7 @@
           },
           "hide": false,
           "queryType": "Azure Monitor",
-          "ref极": "D"
+          "ref": "D"
         }
       ],
       "title": "HTTP Metrics",
@@ -2147,35 +2147,35 @@
     {
       "name": "resourceGroup",
       "type": "constant",
-      "query": "YOUR RESOURCE GROUP NAME",
+      "query": "girard-rg",
       "label": "Resource Group",
       "hide": 2
     },
     {
       "name": "region",
       "type": "constant",
-      "query": "YOUR AZURE REGION NAME",
+      "query": "canadacentral",
       "label": "Region",
       "hide": 2
     },
     {
       "name": "nginxResource",
       "type": "constant",
-      "query": "YOUR NGINXaaS NAME",
+      "query": "girard-nginxaas",
       "label": "NGINX Resource",
       "hide": 2
     },
     {
       "name": "vm1",
       "type": "constant",
-      "query": "YOUR VM-1 NAME",
+      "query": "girard-vm1",
       "label": "VM 1",
       "hide": 2
     },
     {
       "name": "vm2",
       "type": "constant",
-      "query": "YOUR VM-2 NAME",
+      "query": "girard-vm2",
       "label": "VM 2",
       "hide": 2
     }
