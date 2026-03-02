@@ -49,13 +49,13 @@ output "vm_ids" {
   value       = [for vm in azurerm_linux_virtual_machine.nginx_vm : vm.id]
 }
 
-output "grafana_name" {
-  value = azurerm_dashboard_grafana.grafana.name
-}
+# output "grafana_name" {
+#   value = azurerm_dashboard_grafana.grafana.name
+# }
 
-output "grafana_url" {
-  value = azurerm_dashboard_grafana.grafana.endpoint
-}
+# output "grafana_url" {
+#   value = azurerm_dashboard_grafana.grafana.endpoint
+# }
 
 
 output "log_analytics_workspace_name" {
