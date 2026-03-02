@@ -19,8 +19,8 @@ resource "azurerm_nginx_configuration" "main" {
       http {
           upstream app {
               zone app 64k;
-              server ${azurerm_public_ip.vm_pip[0].ip_address} weight=50 max_fails=3 fail_timeout=30s;
-              server ${azurerm_public_ip.vm_pip[1].ip_address} weight=50 max_fails=3 fail_timeout=30s;
+              server ${azurerm_public_ip.vm_pip[0].ip_address} weight=50;
+              server ${azurerm_public_ip.vm_pip[1].ip_address} weight=50;
           }
 
           app_protect_enforcer_address 127.0.0.1:50000;
@@ -37,6 +37,7 @@ resource "azurerm_nginx_configuration" "main" {
                   proxy_set_header X-Real-IP \$remote_addr;
                   proxy_set_header X-Proxy-app app;
                   proxy_pass http://app;
+                  health_check interval=5s passes=2 fails=1;
               }
           }
       }

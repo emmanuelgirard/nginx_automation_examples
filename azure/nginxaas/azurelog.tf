@@ -13,12 +13,15 @@ resource "azurerm_monitor_diagnostic_setting" "nginx_diagnostics" {
   target_resource_id         = azurerm_nginx_deployment.main.id
   log_analytics_workspace_id = azurerm_log_analytics_workspace.nginx_logging.id
 
-  enabled_log {
-    category = "NginxLogs"
-  }
+  # enabled_log {
+  #   category = "NginxLogs"
+  # }
+
+  # enabled_log {
+  #   category = "NginxSecurityLogs"
+  # }
 
   enabled_log {
-    category = "NginxSecurityLogs"
+    category = "AllMetrics"
   }
-
 }
