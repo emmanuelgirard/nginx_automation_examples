@@ -85,7 +85,7 @@ jobs:
             az group delete --name "$RG_NAME" --yes --no-wait
 
             echo "Waiting for resource group deletion to complete..."
-            for i in {1..60}; do
+            for i in {1..120}; do
               sleep 10
               EXISTS_AGAIN=$(az group exists --name "$RG_NAME")
               if [ "$EXISTS_AGAIN" = "false" ]; then
