@@ -526,7 +526,7 @@ wait
 - **Dimensions for per-peer, per-upstream split:** `peer.address` and `upstream`
 - Use `$filter=peer.address eq '*' and upstream eq '*'` to split by all peers and upstreams
 - Use `$filter=peer.address eq '*' and upstream eq '<name>'` to filter by a specific upstream
-- Using `peer.address eq '*'` alone returns `upstream` as `null` b  always include both dimensions
+- Using `peer.address eq '*'` alone returns `upstream` as `null`  always include both dimensions
 - The `orderby` parameter is **not supported** by the Metrics API (it's a Log Analytics / OData feature)
 
 ### Log Analytics Details
