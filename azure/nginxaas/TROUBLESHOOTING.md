@@ -516,7 +516,6 @@ wait
 | Azure Monitor Metrics API | 1-2 minutes | Dashboard charts, historical trends |
 | Log Analytics (KQL) | 30-60 seconds | Near real-time troubleshooting |
 | NGINXaaS Connectivity Test | ~2-3 seconds | On-demand network connectivity checks |
-| NJS Probe (`/probe`) | Real-time | Instant backend reachability check |
 
 ### Azure Monitor Metric Details
 
